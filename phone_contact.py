@@ -1,7 +1,7 @@
 import sys
 
 
-def initial_phonebook():
+def phonebook():
     
     rows, cols = int(input("Please enter initial number of contacts: ")),5
     phone_book = []
@@ -112,7 +112,7 @@ def thanks():
     sys.exit("Goodbye, have a nice day ahead!")
     
 ch = 1
-pb = initial_phonebook()
+pb = phonebook()
 while ch in (1, 2, 3, 4, 5):
     ch = menu()
     if ch == 1:
